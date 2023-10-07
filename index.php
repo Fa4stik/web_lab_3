@@ -10,5 +10,6 @@ $currentData .= "Показ баннера: 0" . $bannerImage . "\n";
 file_put_contents($fileCounter, $currentData);
 
 echo '<a href="metrics.php">Посмотреть метрики</a>';
-echo "<a href='pages/page_" . $bannerNumber . ".php'><img src='0" . $bannerImage . "' alt='Баннер'></a>";
 ?>
+
+<a href='click.php?banner=<?php echo $bannerNumber; ?>'><img src='0<?php echo $bannerImage; ?>' alt='Баннер'></a>
